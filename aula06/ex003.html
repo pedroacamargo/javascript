@@ -20,9 +20,13 @@
     <p>Ja me livrei da maldição</p>
     <script>
 
-        window.alert("Olá, mundo!")
-        window.confirm('Está gostando de JavaScript?')
-        var nome = window.prompt('Qual é o seu nome?')
+        var n1 = Number.parseInt(window.prompt('Digite um número')) // ou Number(n)
+        var n2 = Number.parseInt(window.prompt('Digite outro número')) // n.toString(n) ou String(n)  --> Passar para string
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é ${s}`) // concatenação
+
+
+        // n1.toFixed(2) --> 2 casas decimais
     </script>
 </body>
 </html>
