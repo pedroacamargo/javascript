@@ -1,0 +1,26 @@
+window.document.getElementById("idname")
+window.document.querySelector("div.msg ou div#msg")
+var.innerText -> pega o texto, sem as tags filhas
+var.innerHTML -> pega o html inteiro, com as tags filhas
+
+var.style.stylename = ""
+
+window.alert('Olá, mundo')
+window.prompt("Qual é o seu nome?")
+window.confirm("Está gostando de JavaScript?")
+
+Number.parseInt(n)
+Number.parseFloat(n)
+n.toString(msg)
+
+
+mouseenter
+mousemove
+mousedown -> segurar o mouse
+mouseup -> soltar o mouse
+click -> clicar
+mouseout -> sair da div
+
+function ação(parâmetros) {
+
+}
