@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ex001</title>
+</head>
+<body id="body">
+    <h1>Hora do Dia</h1>
+    <main>
+        <div id="horadodia">Aqui aparece a msg</div>
+        <div id="img"></div>
+    </main>
+    <footer>
+        <p>&copy; Pedro Augusto</p>
+    </footer>
+
+
+    <script>
+
+        var agora = new Date()
+        var hora = agora.getHours()
+        var background = window.document.getElementById("body")
+        var img = window.document.getElementById("img")
+        var frase = window.document.getElementById('horadodia')
+        frase.innerHTML = `Agora são ${hora} horas.`
+        if (hora < 12) {
+            background.style.backgroundColor = 'lightblue'
+            img.innerHTML = '<img src="imgs/manha.jpg" alt="manhã">'
+            // img.src -> faz a mesma coisa
+        } else if (hora <= 18) {
+            background.style.backgroundColor = 'rgb(232, 133, 52)'
+            img.innerHTML = '<img src="imgs/tarde.jpg" alt="tarde">'
+        } else {
+            background.style.backgroundColor = 'black'
+            img.innerHTML = '<img src="imgs/noite1.jpg" alt="noite">'
+        }
+
+
+    </script>
+
+</body>
+</html>
